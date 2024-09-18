@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre con flexbox</title>
+    <link rel="stylesheet" href="css-reset.css">
+</head>
+<style>
+    body
+    {
+        background-size: 100% 100%;
+background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+background-image: radial-gradient(18% 28% at 24% 50%, #CEFAFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #D3FF6D9C 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #6DFFAEF5 24%, #073AFF00 100%),linear-gradient(125deg, #4EB5FFFF 1%, #4C00FCFF 100%);
+    }
+    
+    .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .seccion {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .box {
+        width: 150px;
+        height: 150px;
+        background-color: #73F2FF ;
+        text-align: center;
+        align-content: center;
+        font-size: 2rem;
+        color: white;
+        border: 2px solid #CEFAFF ;
+    }
+
+    .box:hover {
+        font-size: 4rem;
+        font-family:'Cascadia Code';
+    }
+    .box.null {
+        background-color: #4c00fc2f ;
+        border: 2px solid #1f737c ;
+        
+    }
+
+    .box.null:hover {
+    background-image: url('https://th.bing.com/th/id/OIP.yEnbpjjMje-aCPLOoQZjjQHaHa?rs=1&pid=ImgDetMain');
+    background-size: cover; 
+    background-position: center;    
+    }
+
+</style>
+<body>
+<div class="container">
+    <div class="seccion">
+        <div class="box">A</div>
+        <div class="box null"></div>
+        <div class="box">O</div>
+    </div>
+    <div class="seccion">
+        <div class="box">L</div>
+        <div class="box null"></div>
+        <div class="box">T</div>
+    </div>
+    <div class="seccion">
+        <div class="box">B</div>
+        <div class="box">E</div>
+        <div class="box">R</div>
+    </div>
+</div>
+</body>
+</html>
