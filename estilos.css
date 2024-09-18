@@ -1,0 +1,35 @@
+body {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh; 
+}
+
+
+
+.contenedor, .container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.s, .a, .u, .l, .random {
+    background-color: cadetblue;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    align-content: center;
+    border: 2px solid black;
+}
+
+.random {
+    background-color: seagreen;
+    margin-bottom: 10px;
+}
+
+.seccion {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: space-between; 
+}
